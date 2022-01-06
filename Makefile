@@ -17,3 +17,5 @@ createdeb: build
 installdeb: clean createdeb
 	apt install ./package.deb
 
+install: build
+	cp bin/gitname /usr/bin/gitname
